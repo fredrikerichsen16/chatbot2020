@@ -27,6 +27,8 @@ class Endpoint():
     def run(self):
         self.validate_api_key()
 
+        generate_response = GenerateResponseHQ(self.bottle, self.api_key, self.convo_id, )
+
         if not self.convo_id:
             # start convo
             pass
